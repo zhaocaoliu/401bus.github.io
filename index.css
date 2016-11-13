@@ -1,0 +1,128 @@
+body{
+    color: #666;
+    font-size: 1em;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+a:hover{
+    color:#222;
+    text-decoration: underline;
+}
+.con{
+    padding-top: 0.5em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media all and (min-width: 1366px) {
+    .head{
+        width: 100%;
+        height: 2.5em;
+        line-height: 2.5em;
+        color: green;
+        display: flex;
+        font-weight: bold;
+        font-size: 18px;
+        /*padding-bottom: -0.5em;*/
+    }
+    .head img{
+        width: 2em;
+        height: 2em;
+        padding:0 3.8em 0 2.7em;
+    }
+
+    .headx{
+        width: 100%;
+        height: 2em;
+        line-height: 1em;
+        display: flex;
+        font-size: 15px;
+        margin-left: 3em;
+    }
+
+    .row{
+        display: flex;
+        border-top: 0.1em dashed #ccc;
+    }
+
+    .list{
+        flex-wrap:wrap;
+    }
+    .block{
+        height: 3.0em;
+        line-height: 3.0em;
+        display: inline-block;
+        min-width: 8em;
+    }
+
+    .tit{
+        flex: none;
+        float: left;
+        align-self:center;
+        font-weight: bold;
+        color: green;
+        width: 3em;
+        height: 0.8em;
+        padding: 0 3em;
+        text-align: left;
+
+    }
+
+    #footer{
+        border-top: 0.1em dashed #ccc;
+        padding: 1em 0 0 3em;
+        height: 4.5em;
+    }
+
+}
+
+@media all and (max-width: 1365px) {
+    .head{
+        width: 100%;
+        height: 3em;
+        font-weight: bold;
+        color: green;
+        font-size: 18px;
+        line-height: 2.5em;
+        display: flex;
+        margin-left: -0.5em;
+    }
+    .head img{
+        width: 2em;
+        height: 2em;
+    }
+    .headx{
+        width: 100%;
+        height: 2em;
+        font-size: 15px;
+        line-height: 1em;
+        display: flex;
+    }
+    .block{
+        height: 3em;
+        line-height: 3em;
+        display: inline-block;
+        min-width: 120px;/*原來是19%*/
+    }
+
+    .tit{
+        padding: 1.5em 0;
+        text-align: left;
+        font-weight: bold;
+        color: green;
+        height: 0.8em;
+        width: 100%;
+        border-bottom: 0.1em dashed #ccc;
+    }
+
+    #footer{
+        border-top:1px dashed #888;
+        margin-top: 1em;
+        text-align: left;
+        height: 4.5em;
+        line-height: 3em;
+    }
+}
